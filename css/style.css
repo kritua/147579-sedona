@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+}
+body {
+    padding: 0 40px;
+}
+.main-container {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 2px #cccccc;
+    background-color: #ffffff;
+}
+
+.main-header {
+    position: relative;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.main-menu li {
+    padding: 18px 0;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.main-header img {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -69px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.content-section {
+    position: relative;
+    height: 717px;
+    background-color: #ddeff9;
+    background-image:
+        url('../img/white-dual-arrow.png'),
+        url('../img/background.jpg');
+    background-position: 0 100%, 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40%, cover;
+}
+
+.content-section img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 76px;
+
+}
+
+.header-block {
+    max-width: 575px;
+    margin: 123px auto 58px;
+    text-align: center;
+}
+
+.content-header.h1 {
+    font-weight: 700;
+    font-size: 21px;
+}
+
+.content-header.h2 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.content-first-reason,
+.content-last-reason {
+    height: 256px;
+    background-color: #81b3d2;
+}
+
+.content-other-reasons {
+    height: 330px;
+    background-color: #ffffff;
+}
