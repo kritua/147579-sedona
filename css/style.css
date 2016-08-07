@@ -236,11 +236,12 @@ a {
 
 .main-page-footer {
     position: relative;
-}
-
-.iframe-wrapper {
     height: 593px;
     background: url('../img/map.jpg') no-repeat center;
+}
+
+.main-page-footer iframe {
+    width: 100%;
 }
 
 footer b {
