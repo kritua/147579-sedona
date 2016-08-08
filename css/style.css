@@ -61,6 +61,11 @@ a {
     font-size: 14px;
 }
 
+p {
+    color: #333333;
+}
+
+
 .main-container {
     min-width: 768px;
     max-width: 1200px;
@@ -242,6 +247,7 @@ a {
 
 .main-page-footer iframe {
     width: 100%;
+    border: 0;
 }
 
 footer b {
@@ -266,6 +272,10 @@ footer b {
     align-self: center;
 }
 
+.footer-div p {
+    color: #000000;
+}
+
 .footer-hash {
     color: #81b3d2;
 }
@@ -281,4 +291,14 @@ footer b {
 .footer-htmlacademy p {
     display: inline-block;
     vertical-align: middle;
+}
+
+.main-hotels {
+    height: 500px;
+    background-color: #ffffff;
+}
+
+.hotels-features {
+    height: 217px;
+    background: url('../img/hotels-bg.jpg') no-repeat center;
 }
