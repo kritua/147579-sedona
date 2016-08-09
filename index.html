@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <title>Sedona - Because the Grand Canyon sucks!</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -90,6 +90,38 @@
           <h4>Заинтересовались?</h4>
           <p>Укажите предполагаемые даты поезки, <br> и мы покажем вам лучшие предложения гостинец в Седоне</p>
           <a href="">Поиск гостиницы в Седоне</a>
+          <div class="hotel-choose">
+            <form class="form" action="" method="post">
+              <fieldset class="row-form">
+                <label class="label-form" for="date-in">Дата заезда:</label>
+                <input class="input-form date-form" type="date" name="date-in" id="date-in" value="2016-08-15">
+                <span class="icon-calendar"></span>
+              </fieldset>
+
+              <fieldset class="form-row">
+                <label class="label-form" for="date-out">Дата выезда:</label>
+                <input class="input-form date-form" type="date" name="date-out" id="date-out" value="2016-09-21">
+                <span class="icon-calendar"></span>
+              </fieldset>
+
+              <fieldset class="counters form-row">
+                <fieldset class="counter">
+                  <label class="label-form" for="counter-adult">Взрослые:</label>
+                  <button class="icon-minus" type="button"></button>
+                  <input class="input-form form-counter" type="text" name="counter-adult" id="counter-adult" value="2">
+                  <button class="icon-plus" type="button"></button>
+                </fieldset>
+                <fieldset class="counter">
+                  <label class="label-form" for="counter-children">Дети:</label>
+                  <button class="icon-minus" type="button"></button>
+                  <input class="input-form form-counter" type="text" name="counter-children" id="counter-children" value="0">
+                  <button class="icon-plus" type="button"></button>
+                </fieldset>
+              </fieldset>
+
+              <input class="btn" type="submit" value="Найти">
+            </form>
+          </div>
         </section>
       </main>
       <footer class="main-page-footer" id="map">

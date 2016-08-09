@@ -298,7 +298,105 @@ footer b {
     background-color: #ffffff;
 }
 
+.main-hotels li {
+    list-style: none;
+}
+
+.main-hotels h2 {
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .hotels-features {
     height: 217px;
     background: url('../img/hotels-bg.jpg') no-repeat center;
+    color: #ffffff;
+
+}
+
+.hotel-rating {
+    position: relative;
+}
+
+.hotel-rating::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'symbols-sedona';
+    content: '\2605 \2605 \2605 \2605';
+    font-size: 26px;
+    color: #b5b5b5;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.hotels-filters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hotels-filters li {
+    padding: 12px 0;
+    position: relative;
+}
+
+.checklist {
+    margin-left: 72px;
+}
+
+.hotel-type-check .checklist {
+    margin-left: 85px;
+}
+
+
+.checklist li:not(:first-child) {
+    margin-left: 38px;
+}
+
+.hotel-feature-check,
+.hotel-type-check {
+    flex-basis: 20%;
+}
+
+.price-filter {
+    flex-basis: 60%;
+    text-align: right;
+    //align-self: flex-end;
+}
+
+.hotel-type ul {
+    position: relative;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hotels-filters label {
+
+}
+
+input[type=checkbox] + label {
+
+}
+
+input[type=checkbox] + label::before {
+    content: '\2610';
+    font-family: 'symbols-sedona';
+    font-size: 26px;
+    line-height: 20px;
+    position: absolute;
+    top: 13px;
+    left: -39px;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label::before {
+    content: '\2611';
 }
