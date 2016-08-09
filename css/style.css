@@ -250,6 +250,10 @@ p {
     border: 0;
 }
 
+.hotels-page-footer {
+    position: relative;
+}
+
 footer b {
     font-size: 21px;
     font-weight: 700;
@@ -265,6 +269,10 @@ footer b {
     display: flex;
     justify-content: space-around;
     text-align: center;
+}
+
+.hotels-page-footer .footer-contacts {
+    background-color: #ffffff;
 }
 
 .footer-div {
@@ -294,7 +302,6 @@ footer b {
 }
 
 .main-hotels {
-    height: 500px;
     background-color: #ffffff;
 }
 
