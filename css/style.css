@@ -252,6 +252,7 @@ p {
 
 .hotels-page-footer {
     position: relative;
+    height: 120px;
 }
 
 footer b {
@@ -260,7 +261,7 @@ footer b {
 }
 
 .footer-contacts {
-    height: 120px;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     bottom: 0;
@@ -332,7 +333,8 @@ footer b {
     font-family: 'symbols-sedona';
     content: '\2605 \2605 \2605 \2605';
     font-size: 26px;
-    color: #b5b5b5;
+    color: #81b3d2;
+    //#b5b5b5;
 }
 
 fieldset {
@@ -406,4 +408,31 @@ input[type=checkbox] + label::before {
 
 input[type=checkbox]:checked + label::before {
     content: '\2611';
+}
+
+.hotels-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.sort-type,
+.sort-type li,
+.sort-arrows,
+.hotels-sort h2 {
+    display: inline-block;
+}
+
+.hotels-sort,
+.hotels {
+    flex-grow: 1;
+}
+
+.hotels-catalog {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotels-description {
+    display: flex;
+    height: 150px;
 }
