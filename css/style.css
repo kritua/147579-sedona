@@ -47,7 +47,7 @@ html,
 body {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
@@ -235,7 +235,7 @@ p {
     background-color: #766357;
     padding: 27px 140px;
     display: inline-block;
-    margin-top: 44px;
+    margin-top: 48px;
 
 }
 
@@ -261,7 +261,7 @@ footer b {
 }
 
 .footer-contacts {
-    height: 100%;
+    height: 120px;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     bottom: 0;
@@ -326,15 +326,27 @@ footer b {
     position: relative;
 }
 
+
+
 .hotel-rating::before {
     position: absolute;
     top: 0;
     left: 0;
     font-family: 'symbols-sedona';
-    content: '\2605 \2605 \2605 \2605';
     font-size: 26px;
     color: #81b3d2;
-    //#b5b5b5;
+}
+
+.rating-1::before {
+    content: '\2605 \2605 \2605 \2605';
+}
+
+.rating-2::before {
+    content: '\2605 \2605';
+}
+
+.rating-3::before {
+    content: '\2605 \2605 \2605';
 }
 
 fieldset {
