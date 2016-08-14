@@ -55,9 +55,6 @@ body {
     background-color: #f2f2f2;
 }
 
-body {
-    padding: 0 40px;
-}
 
 a {
     text-decoration: none;
@@ -116,6 +113,10 @@ button:enabled {
     padding: 19px 0;
     text-align: center;
     flex-basis: 20%;
+}
+
+.main-menu li:nth-child(2) {
+    margin-right: 20%;
 }
 
 .main-header img {
@@ -416,7 +417,7 @@ button:enabled {
 
 .date-form:active::before,
 .icon-plus:active::before,
-.icon-minus:active::before{
+.icon-minus:active::before {
     color: #81b3d2;
 }
 
@@ -500,7 +501,7 @@ footer b {
     color: #81b3d2;
 }
 
-.footer-social a{
+.footer-social a {
     color: #ffffff;
     font-size: 19px;
     padding: 12px 10px;
