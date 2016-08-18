@@ -20,7 +20,6 @@
           <ul class="main-menu">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и Видео</a></li>
-            <li> </li>
             <li><a href="#map">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
@@ -29,6 +28,9 @@
       <main>
         <section class="content-section">
           <img src="./img/sedona-text.png" width="458" height="352" alt="Sedona. Because the Grand Canyon sucks">
+
+        </section>
+        <section class="headers">
             <h1 class="content-header h1">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
             <h2 class="content-header h2">Рассмотрим 5 причин, по которым Седону круче, чем Гранд Каньон!</h2>
         </section>
@@ -70,17 +72,17 @@
           </div>
         </section>
         <section class="content-other-reasons">
-          <div class="features">
+          <div class="features other-reasons">
             <h3 class="main h3">Небольшая<br> площадь</h3>
             <p class="paddinator">—&nbsp;№3&nbsp;—</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
-          <div class="features">
+          <div class="features other-reasons">
             <h3 class="main h3">Красивая<br> дорога</h3>
             <p class="paddinator">—&nbsp;№4&nbsp;—</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="features">
+          <div class="features other-reasons">
             <h3 class="main h3">Мало<br> туристов</h3>
             <p class="paddinator">—&nbsp;№5&nbsp;—</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -89,8 +91,8 @@
         <section class="content-interesting">
           <h4>Заинтересовались?</h4>
           <p>Укажите предполагаемые даты поезки, <br> и мы покажем вам лучшие предложения гостинец в Седоне</p>
-          <a href="">Поиск гостиницы в Седоне</a>
-          <div class="hotel-choose">
+          <a class="btn btn-choose" id="choose" onclick="showHotelsMenu('.hotel-choose');">Поиск гостиницы в Седоне</a>
+          <div class="hotel-choose popup-window">
             <form class="form" action="" method="post">
               <fieldset class="row-form">
                 <label class="label-form" for="date-in">Дата заезда:</label>
@@ -167,5 +169,6 @@
         </section>
       </footer>
     </div>
+  <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
