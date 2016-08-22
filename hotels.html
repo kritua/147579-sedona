@@ -28,55 +28,59 @@
     <main class="main-hotels" id="main-hotels">
         <section class="hotels-features">
             <form class="hotels-filters">
-                <fieldset class="hotel-feature-check">
-                    <ul class="checklist">
-                        <li><h2>Инфраструктура:</h2></li>
-                        <li>
-                            <input type="checkbox" id="pool-check" name="pool-check">
-                            <label for="pool-check">Бассейн</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="park-check" name="park-check">
-                            <label for="park-check">Бассейн</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="wifi-check" name="wifi-check">
-                            <label for="wifi-check">Wi-Fi</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset class="hotel-type-check">
-                    <ul class="checklist">
-                        <li><h2>Тип жилья:</h2></li>
-                        <li>
-                            <input  type="checkbox" id="hotel-check" name="hotel-check">
-                            <label for="hotel-check">Бассейн</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="motel-check" name="motel-check">
-                            <label for="motel-check">Бассейн</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="room-check" name="room-check">
-                            <label for="room-check">Wi-Fi</label>
-                        </li>
-                    </ul>
-                </fieldset>
+                <div class="filters-fieldsets">
+                    <fieldset class="hotel-feature-check">
+                        <ul class="checklist">
+                            <li><h2>Инфраструктура:</h2></li>
+                            <li>
+                                <input type="checkbox" id="pool-check" name="pool-check">
+                                <label for="pool-check">Бассейн</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="park-check" name="park-check">
+                                <label for="park-check">Бассейн</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="wifi-check" name="wifi-check">
+                                <label for="wifi-check">Wi-Fi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="hotel-type-check">
+                        <ul class="checklist">
+                            <li><h2>Тип жилья:</h2></li>
+                            <li>
+                                <input  type="checkbox" id="hotel-check" name="hotel-check">
+                                <label for="hotel-check">Бассейн</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="motel-check" name="motel-check">
+                                <label for="motel-check">Бассейн</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="room-check" name="room-check">
+                                <label for="room-check">Wi-Fi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
                 <div class="price-filter">
-                    <h2>Стоимость в сутки (Р):</h2>
-                    <div class="price-controls">
-                        <div class="price-range">
-                            <label for="low-cost">От</label>
-                            <input type="text" name="low-cost" id="low-cost">
-                            <label for="high-cost">До</label>
-                            <input type="text" name="high-cost" id="high-cost">
+                    <div class="price-filter-form">
+                        <h2>Стоимость в сутки (Р):</h2>
+                        <div class="price-controls">
+                            <div class="price-range">
+                                <label for="low-cost">От</label>
+                                <input type="text" name="low-cost" id="low-cost" placeholder="0">
+                                <label for="high-cost">До</label>
+                                <input type="text" name="high-cost" id="high-cost">
+                            </div>
+                            <div class="price-slider">
+                                <button class="slider slider-min-price" type="button"></button>
+                                <button class="slider slider-max-price" type="button"></button>
+                            </div>
                         </div>
-                        <div class="price-slider">
-                            <button class="slider slider-min-price" type="button"></button>
-                            <button class="slider slider-max-price" type="button"></button>
-                        </div>
+                        <a class="btn btn-transparent" href="#">Показать</a>
                     </div>
-                    <button class="btn" type="submit">Показать</button>
                 </div>
             </form>
         </section>
