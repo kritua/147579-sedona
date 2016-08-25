@@ -894,6 +894,11 @@ input[type=checkbox]:checked:disabled + label::before {
     border-bottom: 1px dotted #81b3d2;
 }
 
+.sort-type li:nth-of-type(1) {
+    border: none;
+    color: #81b3d2;
+}
+
 
 .hotels-sort h2 {
     width: 135px;
