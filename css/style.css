@@ -236,7 +236,7 @@ button:enabled {
 	font-weight: 700;
 	font-size: 21px;
 	padding-top: 60px;
-	padding-bottom: 15px;
+	padding-bottom: 17px;
 	margin: 0;
 }
 
@@ -339,7 +339,7 @@ button:enabled {
 }
 
 .other-reasons {
-	padding: 58px 6%;
+	padding: 52px 6% 53px;
 }
 
 /* Конец. Content-features */
