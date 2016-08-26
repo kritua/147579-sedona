@@ -128,8 +128,7 @@ button:enabled {
 
 /* Основной контейнер */
 .main-container {
-	min-width: 768px;
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 	box-shadow: 0 0 15px 2px #cccccc;
 	background-color: #ffffff;
@@ -237,14 +236,14 @@ button:enabled {
 	font-weight: 700;
 	font-size: 21px;
 	padding-top: 60px;
-	padding-bottom: 27px;
+	padding-bottom: 15px;
 	margin: 0;
 }
 
 .content-header.h2 {
 	font-weight: 400;
 	font-size: 14px;
-	padding-bottom: 50px;
+	padding-bottom: 40px;
 }
 
 /* Конец. Сontent-section */
@@ -274,6 +273,7 @@ button:enabled {
 	box-sizing: border-box;
 	width: 33.33%;
 	font-size: 14px;
+
 }
 
 .text-wrapper {
