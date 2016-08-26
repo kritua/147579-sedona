@@ -153,6 +153,7 @@ button:enabled {
 	padding: 15px 0;
 	text-align: left;
 	flex-basis: 20%;
+	white-space: nowrap;
 }
 
 .main-menu li:nth-of-type(3),
@@ -203,8 +204,6 @@ button:enabled {
 .main-menu .active:active {
 	color: rgba(118, 99, 87, 0.3);
 }
-
-
 
 /* Конец. Header стили */
 
@@ -948,6 +947,7 @@ input[type=checkbox]:checked:disabled + label::before {
 
 .hotels-sort h2 {
 	width: 135px;
+	font-size: 21px;
 }
 
 .hotels-sort,
