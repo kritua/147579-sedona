@@ -1,174 +1,152 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>Sedona - Because the Grand Canyon sucks!</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="main-container">
-      <header class="main-header">
-        <img src="./img/logo.png" width="138" height="70" alt="Logo">
-        <nav class="main-nav">
-          <ul class="main-menu">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и Видео</a></li>
-            <li><a href="#map">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="content-section">
-          <img src="./img/sedona-text.png" width="458" height="352" alt="Sedona. Because the Grand Canyon sucks">
-
-        </section>
-        <section class="headers">
-            <h1 class="content-header h1">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
-            <h2 class="content-header h2">Рассмотрим 5 причин, по которым Седону круче, чем Гранд Каньон!</h2>
-        </section>
-        <section class="content-first-reason">
-          <div class="content-wrapper text-wrapper">
-            <h3 class="main h3">Настоящий<br> городок</h3>
-            <p class="paddinator">—&nbsp;№1&nbsp;—</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <div class="content-wrapper img-wrapper">
-            <img src="./img/bg-11.jpg" width="800" height="400" alt="First reason image">
-          </div>
-        </section>
-        <section class="content-features">
-          <div class="features">
-            <img src="./img/house.png" width="75" height="72" alt="House icon">
-            <h3 class="main h3">Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </div>
-          <div class="features">
-            <img src="./img/ham.png" width="74" height="70" alt="Hamburger icon">
-            <h3 class="main h3">Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-          <div class="features">
-            <img src="./img/gift.png" width="64" height="76" alt="Gift icon">
-            <h3 class="main h3">Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </div>
-        </section>
-        <section class="content-second-reason">
-          <div class="content-wrapper img-wrapper">
-            <img src="./img/bg-12.jpg" width="800" height="400" alt="Second reason image">
-          </div>
-          <div class="content-wrapper text-wrapper">
-            <h3 class="main h3">Там есть<br> мост дьявола</h3>
-            <p class="paddinator">—&nbsp;№2&nbsp;—</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-        </section>
-        <section class="content-other-reasons">
-          <div class="features other-reasons">
-            <h3 class="main h3">Небольшая<br> площадь</h3>
-            <p class="paddinator">—&nbsp;№3&nbsp;—</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="features other-reasons">
-            <h3 class="main h3">Красивая<br> дорога</h3>
-            <p class="paddinator">—&nbsp;№4&nbsp;—</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="features other-reasons">
-            <h3 class="main h3">Мало<br> туристов</h3>
-            <p class="paddinator">—&nbsp;№5&nbsp;—</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </section>
-        <section class="content-interesting">
-          <h4>Заинтересовались?</h4>
-          <p>Укажите предполагаемые даты поезки, <br> и мы покажем вам лучшие предложения гостинец в Седоне</p>
-          <a class="btn btn-choose" id="choose" onclick="showHotelsMenu('.hotel-choose');">Поиск гостиницы в Седоне</a>
-          <div class="hotel-choose popup-window">
-            <form class="form" action="" method="post">
-              <fieldset class="row-form">
-                <label class="label-form" for="date-in">Дата заезда:</label>
-                <input class="input-form date-form" type="date" name="date-in" id="date-in" value="2016-08-15">
-              </fieldset>
-
-              <fieldset class="row-form">
-                <label class="label-form" for="date-out">Дата выезда:</label>
-                <input class="input-form date-form" type="date" name="date-out" id="date-out" value="2016-09-21">
-              </fieldset>
-
-              <fieldset class="counters row-form">
-                <fieldset class="counter">
-                  <label class="label-form" for="counter-adult">Взрослые:</label>
-                  <button class="icon-minus" type="button"></button>
-                  <input class="input-form form-counter" type="text" name="counter-adult" id="counter-adult" value="2">
-                  <button class="icon-plus" type="button"></button>
-                </fieldset>
-                <fieldset class="counter">
-                  <label class="label-form" for="counter-children">Дети:</label>
-                  <button class="icon-minus" type="button"></button>
-                  <input class="input-form form-counter" type="text" name="counter-children" id="counter-children" value="0">
-                  <button class="icon-plus" type="button"></button>
-                </fieldset>
-              </fieldset>
-
-              <input class="btn btn-find" type="submit" value="Найти">
-            </form>
-          </div>
-        </section>
-      </main>
-      <footer class="main-page-footer" id="map">
-          <iframe width="1200" height="593" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633064!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ%2C+USA!5e0!3m2!1sen!2sru!4v1435000602855" allowfullscreen></iframe>
-        <section class="footer-contacts">
-          <a href="#" class="footer-div footer-hash">#visitsedona</a>
-          <div class="footer-div footer-social">
-            <a href="#" class="icon-twitter"></a>
-            <a href="#" class="icon-facebook"></a>
-            <a href="#" class="icon-youtube"></a>
-          </div>
-          <div class="footer-div footer-htmlacademy">
-            <p>website by</p>
-            <a href="http://htmlacademy.ru">
-              <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 113 39" style="enable-background:new 0 0 113 39;" xml:space="preserve">
-                  <path class="st0" d="M5.8,3.4L18.7,2l12.9,1.4v25.4L18.7,37L5.8,28.9V3.4z"></path>
-                  <path class="st1" d="M6,15.2l12.3-7.7l13.2,7.7V16l-12.8,8.1L6,16V15.2z"></path>
-                  <path class="st2" d="M18.7,23.3l1.8-1.3l-1.8-1.3v-1.3l3,1.9l1-0.6l-3.9-2.5v-1.5l5,3.3l1-0.6l-6-4V14l8.2,5.4V25l-8.2,5.3l-8.3-5.2v-1.5
-                      l8.3,5.4v-1.4l-8.3-5.2v-1.3l8.3,5.2L18.7,23.3L18.7,23.3z M47.2,28.1c0.2,0,0.4-0.1,0.5-0.1v1.4c-0.4,0.1-0.8,0.2-1.1,0.2
-                      c-0.7,0-1.3-0.3-1.6-1c-0.8,0.7-1.7,1.1-3,1.1c-1.5,0-2.8-0.8-2.8-2.6c0-2.2,1.9-2.8,3.5-2.8c0.7,0,1.4,0.1,2,0.3v-0.3
-                      c0-1.1-0.7-1.8-2.1-1.8c-1,0-2,0.2-2.9,0.7v-1.7c1-0.3,2-0.5,3-0.5c2.2,0,3.7,1.2,3.7,3.7v3C46.5,28,46.9,28.1,47.2,28.1 M41,27
-                      c0,0.8,0.7,1.2,1.5,1.2s1.6-0.3,2.3-1v-1.4c-0.6-0.1-1.1-0.2-1.7-0.2C42.1,25.6,41,25.9,41,27 M52.8,20.8c0.9,0,1.7,0.2,2.4,0.7v1.7
-                      c-0.6-0.4-1.4-0.7-2.2-0.7c-1.4,0-2.8,0.8-2.8,2.8c0,1.9,1.4,2.8,2.8,2.8c0.8,0,1.6-0.2,2.3-0.7v1.8c-0.8,0.4-1.6,0.6-2.6,0.6
-                      c-2.1,0-4.2-1.4-4.2-4.4C48.4,22.1,50.7,20.8,52.8,20.8 M64.2,28.1c0.2,0,0.4-0.1,0.5-0.1v1.4c-0.4,0.1-0.8,0.2-1.1,0.2
-                      c-0.7,0-1.3-0.3-1.6-1c-0.8,0.7-1.7,1.1-3,1.1c-1.5,0-2.8-0.8-2.8-2.6c0-2.2,1.9-2.8,3.5-2.8c0.7,0,1.4,0.1,2,0.3v-0.3
-                      c0-1.1-0.7-1.8-2.1-1.8c-1,0-2,0.2-2.9,0.7v-1.7c1-0.3,2-0.5,3-0.5c2.2,0,3.7,1.2,3.7,3.7v3C63.7,28,63.9,28.1,64.2,28.1 M58.1,27
-                      c0,0.8,0.7,1.2,1.5,1.2s1.6-0.3,2.3-1v-1.4c-0.6-0.1-1.1-0.2-1.7-0.2C59.2,25.6,58.1,25.9,58.1,27 M74,17.1v12.3h-1.6V28
-                      c-0.6,0.8-1.5,1.6-3,1.6c-2.4,0-3.9-2-3.9-4.5s1.5-4.5,3.9-4.5c1.4,0,2.3,0.7,2.9,1.3v-5H74C74,17,74,17.1,74,17.1z M69.7,22.4
-                      c-1.4,0-2.5,1.2-2.5,2.8s1,2.8,2.5,2.8c1.1,0,2.1-0.7,2.5-1.8v-2C71.8,23.1,70.8,22.4,69.7,22.4 M79.7,20.8c3.1,0,4.2,2.7,3.7,5.2
-                      h-6c0.2,1.5,1.6,2.2,3,2.2c0.9,0,1.7-0.2,2.5-0.6v1.6c-0.7,0.3-1.7,0.6-2.9,0.6c-2.4,0-4.5-1.5-4.5-4.5
-                      C75.7,22.1,77.9,20.8,79.7,20.8 M79.8,22.3c-1.2,0-2.2,0.7-2.3,2.2h4.4C81.9,23.8,81.5,22.3,79.8,22.3 M85.2,29.5V21h1.6v1.1
-                      c0.4-0.5,1.3-1.3,2.6-1.3c1.2,0,2,0.5,2.5,1.4c0.7-0.7,1.6-1.4,2.8-1.4c2.1,0,3,1.6,3,3.4v5.3h-1.8v-5.2c0-1.1-0.6-1.8-1.6-1.8
-                      c-0.9,0-1.5,0.6-2,1.2c0,0.2,0.1,0.4,0.1,0.6v5.3h-1.8v-5.2c0-1.1-0.6-1.8-1.6-1.8s-1.6,0.7-2.1,1.3v5.7L85.2,29.5L85.2,29.5z
-                       M105.4,21h1.8l-3.7,9.6c-0.8,2.2-2,2.9-3.2,2.9c-0.4,0-0.7-0.1-1-0.1v-1.6c0.3,0.1,0.5,0.1,0.8,0.1c0.8,0,1.5-0.7,2-2l0.2-0.4
-                      L98.6,21h1.9l2.7,6.4C103.1,27.4,105.4,21,105.4,21z M41.6,2.3v4.8C42.3,6.4,43.2,6,44.1,6c2,0,3.2,1.4,3.2,3.5v5.2h-1.8v-5
-                      c0-1.4-0.8-2-1.8-2s-1.8,0.7-2.2,1.4v5.6h-1.8V2.3H41.6z M52.2,3.2v3H55v1.6h-2.9v3.9c0,1.1,0.5,1.5,1.5,1.5c0.6,0,1.1-0.1,1.6-0.3
-                      v1.6c-0.7,0.3-1.4,0.4-2.1,0.3c-1.5,0-2.7-0.8-2.7-2.8V7.8H49V6.2h1.4V3.7C50.5,3.7,52.2,3.2,52.2,3.2z M57.3,14.7V6.2h1.6v1.1
-                      C59.3,6.8,60.2,6,61.4,6s2,0.5,2.5,1.4C64.6,6.6,65.5,6,66.7,6c2.1,0,3,1.6,3,3.4v5.3h-1.8V9.5c0-1.1-0.6-1.8-1.6-1.8
-                      c-0.9,0-1.5,0.6-2,1.2c0,0.2,0.1,0.4,0.1,0.6v5.3h-1.8V9.5c0-1.1-0.6-1.8-1.6-1.8S59.4,8.4,58.9,9v5.7C59,14.8,57.3,14.7,57.3,14.7z
-                       M72.3,2.3h1.8v12.3h-1.8V2.3z"></path>
-            </svg>
-            </a>
-          </div>
-        </section>
-      </footer>
-    </div>
-  <script type="text/javascript" src="js/script.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Sedona - Because the Grand Canyon sucks!</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-container">
+	<header class="main-header">
+		<img src="./img/logo.png" width="138" height="70" alt="Logo">
+		<nav class="main-nav">
+			<ul class="main-menu">
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и Видео</a></li>
+				<li><a href="#map">Карта штата</a></li>
+				<li><a href="hotels.html">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="content-section">
+			<img src="./img/sedona-text.png" width="458" height="352" alt="Sedona. Because the Grand Canyon sucks">
+		</section>
+		<section class="headers">
+			<h1 class="content-header h1">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+			<h2 class="content-header h2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
+		</section>
+		<section class="content-first-reason">
+			<div class="content-wrapper text-wrapper">
+				<h3 class="main h3">Настоящий<br> городок</h3>
+				<p class="paddinator">— №1 —</p>
+				<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+			</div>
+			<div class="content-wrapper img-wrapper">
+				<img src="./img/bg-first.jpg" width="800" height="400" alt="First reason image">
+			</div>
+		</section>
+		<section class="content-features">
+			<div class="features">
+				<img src="./img/house.png" width="75" height="72" alt="House icon">
+				<h3 class="main h3">Жилье</h3>
+				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			</div>
+			<div class="features">
+				<img src="./img/ham.png" width="74" height="70" alt="Hamburger icon">
+				<h3 class="main h3">Еда</h3>
+				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+			</div>
+			<div class="features">
+				<img src="./img/gift.png" width="64" height="76" alt="Gift icon">
+				<h3 class="main h3">Сувениры</h3>
+				<p>Не только китайского, но и местного производства!</p>
+			</div>
+		</section>
+		<section class="content-second-reason">
+			<div class="content-wrapper img-wrapper">
+				<img src="./img/bg-second.jpg" width="800" height="400" alt="Second reason image">
+			</div>
+			<div class="content-wrapper text-wrapper">
+				<h3 class="main h3">Там есть<br> мост дьявола</h3>
+				<p class="paddinator">— №2 —</p>
+				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+			</div>
+		</section>
+		<section class="content-other-reasons">
+			<div class="features other-reasons">
+				<h3 class="main h3">Небольшая<br> площадь</h3>
+				<p class="paddinator">— №3 —</p>
+				<p>Все достопримечательности находятся очень близко</p>
+			</div>
+			<div class="features other-reasons">
+				<h3 class="main h3">Красивая<br> дорога</h3>
+				<p class="paddinator">— №4 —</p>
+				<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+			</div>
+			<div class="features other-reasons">
+				<h3 class="main h3">Мало<br> туристов</h3>
+				<p class="paddinator">— №5 —</p>
+				<p>Большинство едет в Гранд Каньон и толпится там</p>
+			</div>
+		</section>
+		<section class="content-interesting">
+			<h4>Заинтересовались?</h4>
+			<p>Укажите предполагаемые даты поезки, <br> и мы покажем вам лучшие предложения гостинец в Седоне</p>
+			<a class="btn btn-choose" id="choose">Поиск гостиницы в Седоне</a>
+			<div class="hotel-choose popup-window">
+				<form class="form" method="post">
+					<fieldset class="row-form">
+						<label class="label-form" for="date-in">Дата заезда:</label>
+						<input class="input-form date-form" type="date" name="date-in" id="date-in" value="2016-08-24">
+						<i class="icon-calendar"></i>
+					</fieldset>
+					<fieldset class="row-form">
+						<label class="label-form" for="date-out">Дата выезда:</label>
+						<input class="input-form date-form" type="date" name="date-out" id="date-out" value="2016-09-21">
+						<i class="icon-calendar"></i>
+					</fieldset>
+					<fieldset class="counters row-form">
+						<fieldset class="counter">
+							<label class="label-form" for="counter-adult">Взрослые:</label>
+							<button class="icon-minus" type="button"></button>
+							<input class="input-form form-counter" type="text" name="counter-adult" id="counter-adult" value="2">
+							<button class="icon-plus" type="button"></button>
+						</fieldset>
+						<fieldset class="counter">
+							<label class="label-form" for="counter-children">Дети:</label>
+							<button class="icon-minus" type="button"></button>
+							<input class="input-form form-counter" type="text" name="counter-children" id="counter-children"
+							       value="0">
+							<button class="icon-plus" type="button"></button>
+						</fieldset>
+					</fieldset>
+					<input class="btn btn-find" type="submit" value="Найти">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="main-page-footer" id="map">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418521.3507115616!2d-111.89933737063487!3d34.96417594677969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472331176787"
+			width="1200" height="589" allowfullscreen></iframe>
+		<section class="footer-contacts footer-main">
+			<div class="footer-div footer-hash">#visitsedona</div>
+			<div class="footer-div footer-social">
+				<a href="#" class="icon-twitter"></a>
+				<a href="#" class="icon-facebook"></a>
+				<a href="#" class="icon-youtube"></a>
+			</div>
+			<div class="footer-div footer-htmlacademy">
+				<p>website by</p>
+				<a href="http://htmlacademy.ru">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 113 39" style="	enable-background:new 0 0 113 39;" xml:space="preserve">
+						<path class="st0" d="M5.8,3.4L18.7,2l12.9,1.4v25.4L18.7,37L5.8,28.9V3.4z"></path>
+						<path class="st1" d="M6,15.2l12.3-7.7l13.2,7.7V16l-12.8,8.1L6,16V15.2z"></path>
+						<path class="st2" d="M18.7,23.3l1.8-1.3l-1.8-1.3v-1.3l3,1.9l1-0.6l-3.9-2.5v-1.5l5,3.3l1-0.6l-6-4V14l8.2,5.4V25l-8.2,5.3l-8.3-5.2v-1.5 l8.3,5.4v-1.4l-8.3-5.2v-1.3l8.3,5.2L18.7,23.3L18.7,23.3z M47.2,28.1c0.2,0,0.4-0.1,0.5-0.1v1.4c-0.4,0.1-0.8,0.2-1.1,0.2 c-0.7,0-1.3-0.3-1.6-1c-0.8,0.7-1.7,1.1-3,1.1c-1.5,0-2.8-0.8-2.8-2.6c0-2.2,1.9-2.8,3.5-2.8c0.7,0,1.4,0.1,2,0.3v-0.3 c0-1.1-0.7-1.8-2.1-1.8c-1,0-2,0.2-2.9,0.7v-1.7c1-0.3,2-0.5,3-0.5c2.2,0,3.7,1.2,3.7,3.7v3C46.5,28,46.9,28.1,47.2,28.1 M41,27 c0,0.8,0.7,1.2,1.5,1.2s1.6-0.3,2.3-1v-1.4c-0.6-0.1-1.1-0.2-1.7-0.2C42.1,25.6,41,25.9,41,27 M52.8,20.8c0.9,0,1.7,0.2,2.4,0.7v1.7 c-0.6-0.4-1.4-0.7-2.2-0.7c-1.4,0-2.8,0.8-2.8,2.8c0,1.9,1.4,2.8,2.8,2.8c0.8,0,1.6-0.2,2.3-0.7v1.8c-0.8,0.4-1.6,0.6-2.6,0.6 c-2.1,0-4.2-1.4-4.2-4.4C48.4,22.1,50.7,20.8,52.8,20.8 M64.2,28.1c0.2,0,0.4-0.1,0.5-0.1v1.4c-0.4,0.1-0.8,0.2-1.1,0.2 c-0.7,0-1.3-0.3-1.6-1c-0.8,0.7-1.7,1.1-3,1.1c-1.5,0-2.8-0.8-2.8-2.6c0-2.2,1.9-2.8,3.5-2.8c0.7,0,1.4,0.1,2,0.3v-0.3 c0-1.1-0.7-1.8-2.1-1.8c-1,0-2,0.2-2.9,0.7v-1.7c1-0.3,2-0.5,3-0.5c2.2,0,3.7,1.2,3.7,3.7v3C63.7,28,63.9,28.1,64.2,28.1 M58.1,27 c0,0.8,0.7,1.2,1.5,1.2s1.6-0.3,2.3-1v-1.4c-0.6-0.1-1.1-0.2-1.7-0.2C59.2,25.6,58.1,25.9,58.1,27 M74,17.1v12.3h-1.6V28 c-0.6,0.8-1.5,1.6-3,1.6c-2.4,0-3.9-2-3.9-4.5s1.5-4.5,3.9-4.5c1.4,0,2.3,0.7,2.9,1.3v-5H74C74,17,74,17.1,74,17.1z M69.7,22.4 c-1.4,0-2.5,1.2-2.5,2.8s1,2.8,2.5,2.8c1.1,0,2.1-0.7,2.5-1.8v-2C71.8,23.1,70.8,22.4,69.7,22.4 M79.7,20.8c3.1,0,4.2,2.7,3.7,5.2 h-6c0.2,1.5,1.6,2.2,3,2.2c0.9,0,1.7-0.2,2.5-0.6v1.6c-0.7,0.3-1.7,0.6-2.9,0.6c-2.4,0-4.5-1.5-4.5-4.5 C75.7,22.1,77.9,20.8,79.7,20.8 M79.8,22.3c-1.2,0-2.2,0.7-2.3,2.2h4.4C81.9,23.8,81.5,22.3,79.8,22.3 M85.2,29.5V21h1.6v1.1 c0.4-0.5,1.3-1.3,2.6-1.3c1.2,0,2,0.5,2.5,1.4c0.7-0.7,1.6-1.4,2.8-1.4c2.1,0,3,1.6,3,3.4v5.3h-1.8v-5.2c0-1.1-0.6-1.8-1.6-1.8 c-0.9,0-1.5,0.6-2,1.2c0,0.2,0.1,0.4,0.1,0.6v5.3h-1.8v-5.2c0-1.1-0.6-1.8-1.6-1.8s-1.6,0.7-2.1,1.3v5.7L85.2,29.5L85.2,29.5z M105.4,21h1.8l-3.7,9.6c-0.8,2.2-2,2.9-3.2,2.9c-0.4,0-0.7-0.1-1-0.1v-1.6c0.3,0.1,0.5,0.1,0.8,0.1c0.8,0,1.5-0.7,2-2l0.2-0.4 L98.6,21h1.9l2.7,6.4C103.1,27.4,105.4,21,105.4,21z M41.6,2.3v4.8C42.3,6.4,43.2,6,44.1,6c2,0,3.2,1.4,3.2,3.5v5.2h-1.8v-5 c0-1.4-0.8-2-1.8-2s-1.8,0.7-2.2,1.4v5.6h-1.8V2.3H41.6z M52.2,3.2v3H55v1.6h-2.9v3.9c0,1.1,0.5,1.5,1.5,1.5c0.6,0,1.1-0.1,1.6-0.3 v1.6c-0.7,0.3-1.4,0.4-2.1,0.3c-1.5,0-2.7-0.8-2.7-2.8V7.8H49V6.2h1.4V3.7C50.5,3.7,52.2,3.2,52.2,3.2z M57.3,14.7V6.2h1.6v1.1 C59.3,6.8,60.2,6,61.4,6s2,0.5,2.5,1.4C64.6,6.6,65.5,6,66.7,6c2.1,0,3,1.6,3,3.4v5.3h-1.8V9.5c0-1.1-0.6-1.8-1.6-1.8 c-0.9,0-1.5,0.6-2,1.2c0,0.2,0.1,0.4,0.1,0.6v5.3h-1.8V9.5c0-1.1-0.6-1.8-1.6-1.8S59.4,8.4,58.9,9v5.7C59,14.8,57.3,14.7,57.3,14.7z M72.3,2.3h1.8v12.3h-1.8V2.3z"></path>
+					</svg>
+				</a>
+			</div>
+		</section>
+	</footer>
+</div>
+<script type="text/javascript" src="js/script.min.js"></script>
+</body>
 </html>
