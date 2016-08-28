@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<title>Sedona - Because the Grand Canyon sucks!</title>
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="./img/favicon.png" type="image/png">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
@@ -26,71 +26,67 @@
 		</nav>
 	</header>
 	<main>
-		<section class="content-section">
+		<div class="content-section">
 			<img src="./img/sedona-text.png" width="458" height="352" alt="Sedona. Because the Grand Canyon sucks">
-		</section>
+		</div>
 		<section class="headers">
 			<h1 class="content-header h1">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 			<h2 class="content-header h2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
 		</section>
-		<section class="content-first-reason">
+		<section class="content-reason content-first-reason">
 			<div class="content-wrapper text-wrapper">
-				<h3 class="main h3">Настоящий<br> городок</h3>
+				<h3 class="main-h3 br-imitation">Настоящий городок</h3>
 				<p class="paddinator">— №1 —</p>
 				<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
-			<div class="content-wrapper img-wrapper">
-				<img src="./img/bg-first.jpg" width="800" height="400" alt="First reason image">
-			</div>
+
 		</section>
 		<section class="content-features">
 			<div class="features">
 				<img src="./img/house.png" width="75" height="72" alt="House icon">
-				<h3 class="main h3">Жилье</h3>
+				<h3 class="main-h3">Жилье</h3>
 				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			</div>
 			<div class="features">
 				<img src="./img/ham.png" width="74" height="70" alt="Hamburger icon">
-				<h3 class="main h3">Еда</h3>
+				<h3 class="main-h3">Еда</h3>
 				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			</div>
 			<div class="features">
 				<img src="./img/gift.png" width="64" height="76" alt="Gift icon">
-				<h3 class="main h3">Сувениры</h3>
+				<h3 class="main-h3">Сувениры</h3>
 				<p>Не только китайского, но и местного производства!</p>
 			</div>
 		</section>
-		<section class="content-second-reason">
-			<div class="content-wrapper img-wrapper">
-				<img src="./img/bg-second.jpg" width="800" height="400" alt="Second reason image">
-			</div>
+		<section class="content-reason content-second-reason">
+
 			<div class="content-wrapper text-wrapper">
-				<h3 class="main h3">Там есть<br> мост дьявола</h3>
+				<h3 class="main-h3"><span class="br-imitation-2">Там есть</span> мост дьявола</h3>
 				<p class="paddinator">— №2 —</p>
 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			</div>
 		</section>
 		<section class="content-other-reasons">
 			<div class="features other-reasons">
-				<h3 class="main h3">Небольшая<br> площадь</h3>
+				<h3 class="main-h3 br-imitation">Небольшая площадь</h3>
 				<p class="paddinator">— №3 —</p>
 				<p>Все достопримечательности находятся очень близко</p>
 			</div>
 			<div class="features other-reasons">
-				<h3 class="main h3">Красивая<br> дорога</h3>
+				<h3 class="main-h3 br-imitation">Красивая дорога</h3>
 				<p class="paddinator">— №4 —</p>
 				<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 			</div>
 			<div class="features other-reasons">
-				<h3 class="main h3">Мало<br> туристов</h3>
+				<h3 class="main-h3 br-imitation">Мало туристов</h3>
 				<p class="paddinator">— №5 —</p>
 				<p>Большинство едет в Гранд Каньон и толпится там</p>
 			</div>
 		</section>
 		<section class="content-interesting">
 			<h4>Заинтересовались?</h4>
-			<p>Укажите предполагаемые даты поезки, <br> и мы покажем вам лучшие предложения гостинец в Седоне</p>
-			<a class="btn btn-choose" id="choose">Поиск гостиницы в Седоне</a>
+			<p><span class="br-imitation">Укажите предполагаемые даты поезки,</span> и мы покажем вам лучшие предложения гостинец в Седоне</p>
+			<a href="hotels.html" class="btn btn-choose" id="choose">Поиск гостиницы в Седоне</a>
 			<div class="hotel-choose popup-window">
 				<form class="form" method="post">
 					<fieldset class="row-form">
@@ -118,21 +114,22 @@
 							<button class="icon-plus" type="button"></button>
 						</fieldset>
 					</fieldset>
-					<input class="btn btn-find" type="submit" value="Найти">
+					<a class="btn btn-find" id="find">Найти</a>
 				</form>
 			</div>
 		</section>
 	</main>
 	<footer class="main-page-footer" id="map">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418521.3507115616!2d-111.89933737063487!3d34.96417594677969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472331176787"
-			width="1200" height="589" allowfullscreen></iframe>
-		<section class="footer-contacts footer-main">
+		<iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418521.3507115616!2d-111.89933737063487!3d34.96417594677969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472331176787" width="1200" height="593" allowfullscreen></iframe>
+		<img class="show" src="./img/map.jpg" width="1200" height="593" alt="Map">
+		<div class="footer-contacts footer-main">
 			<div class="footer-div footer-hash">#visitsedona</div>
-			<div class="footer-div footer-social">
-				<a href="#" class="icon-twitter"></a>
-				<a href="#" class="icon-facebook"></a>
-				<a href="#" class="icon-youtube"></a>
+			<div class="footer-div social-div">
+				<div class="footer-social">
+					<a href="#" class="icon-twitter"></a>
+					<a href="#" class="icon-facebook"></a>
+					<a href="#" class="icon-youtube"></a>
+				</div>
 			</div>
 			<div class="footer-div footer-htmlacademy">
 				<p>website by</p>
@@ -144,7 +141,7 @@
 					</svg>
 				</a>
 			</div>
-		</section>
+		</div>
 	</footer>
 </div>
 <script type="text/javascript" src="js/script.min.js"></script>
