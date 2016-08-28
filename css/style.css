@@ -226,8 +226,9 @@ button:enabled {
 /* Сontent-section */
 .content-section {
 	background-color: #81b3d2;
-	background: url('../img/white-dual-arrow.png') 0 100% no-repeat,
-	url('../img/background.jpg') no-repeat;
+	background:
+		url('../img/white-dual-arrow.png') 0 100% no-repeat,
+		url('../img/bg-main.jpg') no-repeat;
 	background-size: 100% 57px, cover;
 	text-align: center;
 }
