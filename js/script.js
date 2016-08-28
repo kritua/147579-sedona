@@ -10,3 +10,14 @@ buttonChoose.onclick = function() {
 	}
 };
 
+var iframe = document.querySelector("#iframe");
+var imageMap = document.querySelector(".show");
+
+iframe.classList.add("show");
+
+if (iframe) {
+	imageMap.style.display = "none";
+} else {
+	imageMap.style.display = "block";
+}
+
