@@ -8,3 +8,4 @@ buttonChoose.onclick = function() {
 		elem.style.display = 'block';
 	}
 };
+
