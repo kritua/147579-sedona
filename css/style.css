@@ -154,8 +154,8 @@ button:enabled {
 .main-menu li {
 	padding: 15px 0;
 	text-align: left;
-	-ms-flex-preferred-size: 20%;
 	flex-basis: 20%;
+	-ms-flex: 1;
 }
 
 .main-menu .active {
@@ -356,7 +356,7 @@ button:enabled {
 }
 
 .features {
-	-ms-flex-preferred-size: 33.33%;
+	-ms-flex: 1;
 	flex-basis: 33.33%;
 	text-align: center;
 	padding: 59px 4% 79px;
@@ -688,6 +688,7 @@ button:enabled {
 .footer-div {
 	-ms-flex-preferred-size: 33.33%;
 	flex-basis: 33.33%;
+	-ms-flex: 1;
 	-ms-flex-item-align: center;
 	align-self: center;
 }
@@ -701,10 +702,6 @@ button:enabled {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-}
-
-.footer-hash:hover {
-	color: #81b3d2;
 }
 
 .footer-social a {
@@ -859,8 +856,8 @@ footer svg {
 }
 
 .filters-fieldsets {
-	-ms-flex-preferred-size: 66.7%;
 	flex-basis: 66.7%;
+	-ms-flex: 2;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -874,9 +871,13 @@ footer svg {
 	margin-left: -4px;
 }
 
+.price-filter-form {
+	max-width: 328px;
+}
+
 .price-filter {
-	-ms-flex-preferred-size: 33.33%;
 	flex-basis: 33.33%;
+	-ms-flex: 1;
 	text-align: center;
 	margin-top: 1px;
 	margin-left: 70px;
@@ -948,10 +949,12 @@ footer svg {
 .price-slider::before {
 	opacity: 0.3;
 	right: 2px;
+	max-width: 307px;
 }
 
 .price-slider::after {
 	right: 60px;
+	max-width: 248px;
 }
 
 .slider,
