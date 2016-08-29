@@ -157,6 +157,7 @@ button:enabled {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	padding: 0 6%;
 	margin: 0;
@@ -190,11 +191,9 @@ button:enabled {
 
 .main-menu li:nth-child(2) {
 	margin-right: 20%;
-	padding-left: 60px;
 }
 
 .main-menu li:nth-child(3) {
-	padding-right: 64px;
 }
 
 .main-header img {
