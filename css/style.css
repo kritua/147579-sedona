@@ -1256,3 +1256,7 @@ iframe {
 .show {
 	display: block;
 }
+
+.social-text {
+	display: none;
+}
