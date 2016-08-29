@@ -170,6 +170,7 @@ button:enabled {
 	-ms-flex: 1;
 	flex-basis: 20%;
 	overflow: hidden;
+	box-sizing: border-box;
 }
 
 .main-menu .active {
@@ -190,10 +191,12 @@ button:enabled {
 }
 
 .main-menu li:nth-child(2) {
+	padding-left: 30px;
 	margin-right: 20%;
 }
 
 .main-menu li:nth-child(3) {
+	padding-right: 34px;
 }
 
 .main-header img {
